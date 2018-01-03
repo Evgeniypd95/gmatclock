@@ -1,6 +1,5 @@
- <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride All
-                Order allow,deny
-                allow from all
- </Directory>
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|images|js|css|uploads|favicon.png)
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^(.*)$ ./index.php/$1 [L]
