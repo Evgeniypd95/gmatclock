@@ -33,18 +33,19 @@
   <div class="form-group">
     <label for="inputCurrent" class="col-sm-6 control-label">Your current score</label>
     <div class="col-sm-6">
-      <input type="email" class="form-control" id="inputCurrent" placeholder="500">
+      <input type="number" id="current" class="form-control" id="inputCurrent" placeholder="500">
     </div>
   </div>
   <div class="form-group">
     <label for="inputDesired" class="col-sm-6 control-label">Score you want to get</label>
     <div class="col-sm-6">
-      <input type="password" class="form-control" id="inputDesired" placeholder="600">
+      <input type="number" id="desired" class="form-control" id="inputDesired" placeholder="600">
     </div>
   </div>
   <div class="form-group">
     <div class="col-sm-offset-4 col-sm-8">
-      <button type="submit" class="btn btn-default">Calculate</button>
+      <a class="btn btn-default" onclick="calcScore()">Calculate</a>
+      <p id="demo"></p>
     </div>
   </div>
 </form>
@@ -53,6 +54,30 @@
 					</div>
 				</div>
 			</div>
+
+
+			<script type="text/javascript">
+				function calcScore() {
+				var x, y, z, t;
+				
+				x = +document.getElementById('current').value;
+				if (x<400) {
+					t = 75;
+				} else if (x>=400 & x<500) {
+					t = 87;
+				} else if (x>=500 & x<600) {
+					t = 98;
+				} else if (x>=600 & x<700) {
+					t = 107;
+				} else if (x>=700 & x<800) {
+					t = 121;
+				}
+				
+				y = +document.getElementById('desired').value;
+				z = x + y;
+				document.getElementById("demo").innerHTML = t;
+				}
+			</script>
                 		</div>
                 	</div>
 
