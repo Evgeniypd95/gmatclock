@@ -8,7 +8,13 @@
                 <div class="fill" style="background-color: green;">
                 	<div class="container">
                 		<div class="row" style="margin-top: 20px;">
-                			<div class="col-md-6"><h1 style="color: white;">Track your GMAT progress with counting time, keep yourself accountable.</h1></div>
+                			<div class="col-md-6">
+                				<h1 style="color: white;">Track your GMAT progress with counting time.</h1>
+                				<h3 style="color: white;">Sign up now to track your progress towards you goal.</h3>
+                				<div class="text-center">
+                				<a href="" class="btn btn-primary" style="font-size: 20px;">Sign up</a>
+                				</div>
+                			</div>
                 			<div class="col-md-4">
 				<div class="panel">
 					<div class="panel-heading">
@@ -25,15 +31,15 @@
 							<div class="col-lg-12">
 								<form class="form-horizontal">
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-6 control-label">Your current score</label>
+    <label for="inputCurrent" class="col-sm-6 control-label">Your current score</label>
     <div class="col-sm-6">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      <input type="email" class="form-control" id="inputCurrent" placeholder="500">
     </div>
   </div>
   <div class="form-group">
-    <label for="inputPassword3" class="col-sm-6 control-label">Score you want to get</label>
+    <label for="inputDesired" class="col-sm-6 control-label">Score you want to get</label>
     <div class="col-sm-6">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      <input type="password" class="form-control" id="inputDesired" placeholder="600">
     </div>
   </div>
   <div class="form-group">
