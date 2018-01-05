@@ -7,10 +7,11 @@
 	
 	<title>Gmatclock</title>
 	<!-- Bootstrap Core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="assets/bootstrap/css/modern-business.css" rel="stylesheet">
+    <!-- <link href="assets/bootstrap/css/modern-business.css" rel="stylesheet"> -->
+    <link href="assets/bootstrap/css/gmatclock.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="assets/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
