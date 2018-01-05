@@ -1,6 +1,21 @@
-header {
+header#cta1 {
     background-color: #18bc9c;
-  }    
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+#cta1 h1, h3 {
+    color: white;
+  } 
+#cta1 .btn-primary {
+  font-size: 20px;
+}
+#cta1 .panel-heading {
+  font-weight: bold;
+}
+#cta1 hr {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
 @media (min-width:1025px) { 
      
 }

@@ -1,20 +1,24 @@
     <!-- Header-->
-<header>
-    <div >
+<header id="cta1">
+    <div>
         <div class="container">
-            <div class="row" style="margin-top: 20px;">
+            <div class="row">
+                <!-- left column of header -->
                 <div class="col-md-6">
-                	<h1 style="color: white;">Track your GMAT progress with counting time.</h1>
-                	<h3 style="color: white;">Sign up now to track your progress towards you goal.</h3>
+                	<h1>Track your GMAT progress with counting time.</h1>
+                	<h3>Sign up now to track your progress towards you goal.</h3>
                 	   <div class="text-center">
-                	       <a href="" class="btn btn-primary" style="font-size: 20px;">Sign up</a>
+                	       <a href="" class="btn btn-primary">Sign up</a>
                         </div>
                 </div>
+                <!-- left column of header ends-->
+
+                <!-- right column of header -->
                 <div class="col-md-4">
 				    <div class="panel">
 					    <div class="panel-heading">
 						    <div class="row">
-							    <div class="col-xs-12">
+							    <div class="col-xs-12 text-center">
 								    <div>See how much more hours do you need to study</div>
 							    </div>
 						    </div>
@@ -50,55 +54,47 @@
 					</div>
 				    </div>
 			    </div>
+                <!-- right column of header ends-->
             </div>
         </div>
     </div>
-
-			<script type="text/javascript">
+    <script type="text/javascript">
 				function calcScore() {
-				var x, y, z, t;
+				var x, y, z, h, o;
 				
 				x = +document.getElementById('current').value;
 				y = +document.getElementById('desired').value;
-				if (x>0 & x<400) {
-					t = 75;
-				} else if (x>=400 & x<500) {
-					t = 87;
-				} else if (x>=500 & x<600) {
-					t = 98;
-				} else if (x>=600 & x<700) {
-					t = 107;
-				} else if (x>=700 & x<800) {
-					t = 121;
-				}
 
-				if (y>0 & y<400) {
-					h = 75;
-				} else if (y>=400 & y<500) {
-					h = 87;
-				} else if (y>=500 & y<600) {
-					h = 98;
-				} else if (y>=600 & y<700) {
-					h = 107;
-				} else if (y>=700 & y<800) {
-					h = 121;
-				}
-				
-				
-				z = h - t;
+                z = y-x;
 
-				if (z) {
-					document.getElementById("demo").innerHTML = "you still need to study "+z+" hours. Sign up to see how many hours you need to study every day for your exam and track your progress."+ '<a href="" class="btn btn-primary">Sign up</a>';
+                if (x>=200 & x<300) {
+                    h=75;
+                    o = z*(h/100);
+                } else if (x>=300 & x<450) {
+                    h=6;
+                    o = z*(h/100);
+                } else if (x>=450 & x<550) {
+                    h=5.5;
+                    o = z*(h/50);
+                } else if (x>=550 & x<650) {
+                    h=4.5;
+                    o = z*(h/50);
+                } else if (x>=650 & x<750) {
+                    h=7;
+                    o = z*(h/50);
+                } else if (x>=750 & x<=800) {
+                    h=9.5;
+                    o = z*(h/50);
+                }
+				if (o) {
+					document.getElementById("demo").innerHTML = "you still need to study "+o+" hours. Sign up to see how many hours you need to study every day for your exam and track your progress."+ '<a href="" class="btn btn-primary">Sign up</a>';
 				} else {
 					document.getElementById("demo").innerHTML = "input your scores";
 				}
 				
 				}
-			</script>
-                		
-
+		</script>
 </header>
-
     <!-- Page Content -->
     <div class="container">
 
