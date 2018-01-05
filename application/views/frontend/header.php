@@ -11,7 +11,7 @@
 
     <!-- Custom CSS -->
     <!-- <link href="assets/bootstrap/css/modern-business.css" rel="stylesheet"> -->
-    <link href="assets/bootstrap/css/gmatclock.css?v=5" rel="stylesheet">
+    <link href="assets/bootstrap/css/gmatclock.css?v=6" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="assets/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">

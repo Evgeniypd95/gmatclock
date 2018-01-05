@@ -1,7 +1,7 @@
 header#cta1 {
     background-color: #18bc9c;
-    padding-top: 80px;
-    padding-bottom: 10px;
+    padding-top: 100px;
+    padding-bottom: 80px;
   }
 #cta1 h1, h3 {
     color: white;
@@ -15,6 +15,9 @@ header#cta1 {
 #cta1 hr {
   margin-top: 15px;
   margin-bottom: 0px;
+}
+.cta1-calc {
+  color: #2c3e50;
 }
 @media (min-width:1025px) { 
      

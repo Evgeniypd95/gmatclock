@@ -14,12 +14,12 @@
                 <!-- left column of header ends-->
 
                 <!-- right column of header -->
-                <div class="col-md-4">
+                <div class="col-md-6" style="font-size: 20px;">
 				    <div class="panel">
 					    <div class="panel-heading">
 						    <div class="row">
 							    <div class="col-xs-12 text-center">
-								    <div>See how much more hours do you need to study</div>
+								    <div>See how many hours do you need to study</div>
 							    </div>
 						    </div>
 						<hr>
@@ -29,13 +29,6 @@
 							<div class="col-lg-12">
 								<form class="form-horizontal">
                                     <div class="form-group">
-                                        <label for="inputCurrent" class="col-sm-6 control-label">Your current score</label>
-                                        <div class="col-sm-6">
-                                            <input type="number" id="current" class="form-control" id="inputCurrent" placeholder="500">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
                                         <label for="inputDesired" class="col-sm-6 control-label">Score you want to get</label>
                                         <div class="col-sm-6">
                                             <input type="number" id="desired" class="form-control" id="inputDesired" placeholder="600">
@@ -43,11 +36,11 @@
                                     </div>
                                     
                                     <div class="form-group">
-                                        <div class="col-sm-offset-4 col-sm-8">
+                                        <div class="text-center">
                                             <a class="btn btn-default" onclick="calcScore()">Calculate</a>
                                         </div>
                                     </div>
-                    <div class="col-sm-12 text-center" id="demo"></div>
+                    <div class="col-sm-12 text-center" id="result"></div>
                                 </form>
 							</div>
 						</div>
@@ -60,36 +53,39 @@
     </div>
     <script type="text/javascript">
 				function calcScore() {
-				var x, y, z, h, o;
+				var x, h;
 				
-				x = +document.getElementById('current').value;
-				y = +document.getElementById('desired').value;
+				x = +document.getElementById('desired').value;
+				
 
-                z = y-x;
+                
 
                 if (x>=200 & x<300) {
-                    h=75;
-                    o = z*(h/100);
-                } else if (x>=300 & x<450) {
-                    h=6;
-                    o = z*(h/100);
-                } else if (x>=450 & x<550) {
-                    h=5.5;
-                    o = z*(h/50);
-                } else if (x>=550 & x<650) {
-                    h=4.5;
-                    o = z*(h/50);
-                } else if (x>=650 & x<750) {
-                    h=7;
-                    o = z*(h/50);
+                    h=69;
+                } else if (x>=300 & x<400) {
+                    h=81;
+                } else if (x>=400 & x<450) {
+                    h=87;
+                } else if (x>=450 & x<500) {
+                    h=92.5;
+                } else if (x>=500 & x<550) {
+                    h=98;
+                } else if (x>=550 & x<600) {
+                    h=102.5;
+                } else if (x>=600 & x<650) {
+                    h=107;
+                } else if (x>=650 & x<700) {
+                    h=114;
+                } else if (x>=700 & x<750) {
+                    h=121;
                 } else if (x>=750 & x<=800) {
-                    h=9.5;
-                    o = z*(h/50);
+                    h=129.5;
                 }
-				if (o) {
-					document.getElementById("demo").innerHTML = "you still need to study "+o+" hours. Sign up to see how many hours you need to study every day for your exam and track your progress."+ '<a href="" class="btn btn-primary">Sign up</a>';
+
+				if (h) {
+					document.getElementById("result").innerHTML = '<span class="label label-success">On average students study for '+ h+ " hours to score "+ x+'.'+'</span>'+'<br>'+'<span class="label label-primary">'+'Sign up now to track your study time every day.'+'</span>';
 				} else {
-					document.getElementById("demo").innerHTML = "input your scores";
+					document.getElementById("result").innerHTML = '<span class="label label-warning">Input your desired score.</span>';
 				}
 				
 				}
@@ -107,12 +103,12 @@
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Know how long you need to study</h4>
-                        <p>It helps you to estimate how many hours you need to study every week and every day to achieve your goal based on statistics published by GMAT Test.</p>
+                        <h4>Record how long you study</h4>
+                        <p>Use GMATClock timer to record your every study session.</p>
                     </div>
                 </div>
             </div>
@@ -121,12 +117,12 @@
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
                         <h4>Track your progress</h4>
-                        <p>Input how many hours you've studied today to see your progress and how close you are to your goal.</p>
+                        <p>Set goals how many hours you want to study every week or every day and track it.</p>
                     </div>
                 </div>
             </div>
@@ -135,12 +131,12 @@
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
                         <h4>Keep yourself accountable</h4>
-                        <p>See how many hours you still need to study today or this week.</p>
+                        <p>See your progress over time and measure if you are meeting your goal.</p>
                     </div>
                 </div>
             </div>
@@ -163,7 +159,11 @@
         <div class="well">
             <div class="row">
                 <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    <ol>
+                        <li>When you start studying turn on GMATClock timer.</li>
+                        <li>Save your entry after you are done studying.</li>
+                        <li>Track your progress over time.</li>
+                    </ol>
                 </div>
                 <div class="col-md-4">
                     <a class="btn btn-lg btn-default btn-block" href="#">Sign Up</a>
