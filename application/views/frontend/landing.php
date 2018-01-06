@@ -1,20 +1,19 @@
-    <!-- Header-->
+<!-- Header-->
 <header id="cta1">
-    <div>
         <div class="container">
             <div class="row">
                 <!-- left column of header -->
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6">
                 	<h1>Track your GMAT progress with counting time.</h1>
-                	<h3>Sign up now to track your progress towards you goal.</h3>
-                	   <div class="text-center">
-                	       <a href="" class="btn btn-primary">Sign up</a>
+                	<h3 class="desktop-ipadpro">Sign up now to track your progress towards you goal.</h3>
+                	   <div class="text-center desktop-ipadpro">
+                	       <a href="#" data-toggle="modal" data-target="#signup" class="btn btn-primary">Sign up</a>
                         </div>
                 </div>
                 <!-- left column of header ends-->
 
                 <!-- right column of header -->
-                <div class="col-md-6" style="font-size: 20px;">
+                <div class="col-md-6 col-sm-6 calc-form">
 				    <div class="panel">
 					    <div class="panel-heading">
 						    <div class="row">
@@ -40,7 +39,7 @@
                                             <a class="btn btn-default" onclick="calcScore()">Calculate</a>
                                         </div>
                                     </div>
-                    <div class="col-sm-12 text-center" id="result"></div>
+                                        <div class="col-sm-12 text-center" id="result"></div>
                                 </form>
 							</div>
 						</div>
@@ -48,57 +47,26 @@
 				    </div>
 			    </div>
                 <!-- right column of header ends-->
+                <div class="col-md-12 mobile-ipad">
+                    <h3>Sign up now to track your progress towards you goal.</h3>
+                       <div class="text-center">
+                           <a href="#" data-toggle="modal" data-target="#signup" class="btn btn-primary">Sign up</a>
+                        </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script type="text/javascript">
-				function calcScore() {
-				var x, h;
-				
-				x = +document.getElementById('desired').value;
-				
-
-                
-
-                if (x>=200 & x<300) {
-                    h=69;
-                } else if (x>=300 & x<400) {
-                    h=81;
-                } else if (x>=400 & x<450) {
-                    h=87;
-                } else if (x>=450 & x<500) {
-                    h=92.5;
-                } else if (x>=500 & x<550) {
-                    h=98;
-                } else if (x>=550 & x<600) {
-                    h=102.5;
-                } else if (x>=600 & x<650) {
-                    h=107;
-                } else if (x>=650 & x<700) {
-                    h=114;
-                } else if (x>=700 & x<750) {
-                    h=121;
-                } else if (x>=750 & x<=800) {
-                    h=129.5;
-                }
-
-				if (h) {
-					document.getElementById("result").innerHTML = '<span class="label label-success">On average students study for '+ h+ " hours to score "+ x+'.'+'</span>'+'<br>'+'<span class="label label-primary">'+'Sign up now to track your study time every day.'+'</span>';
-				} else {
-					document.getElementById("result").innerHTML = '<span class="label label-warning">Input your desired score.</span>';
-				}
-				
-				}
-		</script>
 </header>
-    <!-- Page Content -->
-    <div class="container">
+<!-- header ends -->
 
+<!-- What it gives you -->
+<section>   
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">How does it help you?</h2>
+                <hr>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4">
                 <div class="text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
@@ -112,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4">
                 <div class="text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
@@ -126,12 +94,12 @@
                     </div>
                 </div>
             </div>
-           	<div class="col-md-4 col-sm-6">
+       	    <div class="col-md-4 col-sm-4">
                 <div class="text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
@@ -141,34 +109,46 @@
                 </div>
             </div>
         </div>
+    </div>    
+</section>
+<!-- What it gives you ends-->
 
-        <!-- Portfolio Section -->
+<!-- How it works -->
+<section>      
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Watch how it works</h2>
-            </div>
-           
-        </div>
-        <!-- /.row -->
-
-        
-
-        <hr>
-
-        <!-- Call to Action Section -->
-        <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <ol>
-                        <li>When you start studying turn on GMATClock timer.</li>
-                        <li>Save your entry after you are done studying.</li>
-                        <li>Track your progress over time.</li>
-                    </ol>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Sign Up</a>
-                </div>
+                <hr>
             </div>
         </div>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/244405542?loop=1&title=0&byline=0"></iframe>
+        </div>
+    </div>
+    <hr>        
+</section>
+<!-- How it works ends-->
 
-        <hr>
+<!-- Call to Action -->        
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ol>
+                            <li>When you start studying turn on GMATClock timer.</li>
+                            <li>Save your entry after you are done studying.</li>
+                            <li>Track your progress over time.</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-lg btn-default btn-block" href="#" data-toggle="moddata-target="  #signup">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <hr>
+</section>

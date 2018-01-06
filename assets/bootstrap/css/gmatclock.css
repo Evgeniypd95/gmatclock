@@ -1,6 +1,6 @@
 header#cta1 {
     background-color: #18bc9c;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 80px;
   }
 #cta1 h1, h3 {
@@ -16,27 +16,71 @@ header#cta1 {
   margin-top: 15px;
   margin-bottom: 0px;
 }
+#cta1 .panel{
+  font-size: 20px;
+}
 .cta1-calc {
   color: #2c3e50;
 }
+.calc-form {
+  padding-top: 20px;
+}
 @media (min-width:1025px) { 
-     
+     #cta1 .mobile-ipad {
+      display: none;
+     }
+    #cta1 .label {
+    white-space: nowrap;
+    }
 }
 
 @media (min-width: 1201px){
-  
+  #cta1 .mobile-ipad {
+      display: none;
+     }
+    #cta1 .label {
+    white-space: nowrap;
+    }
 }
 
 @media (min-width:992px) and (max-width: 1200px) {
-    
+    #cta1 .mobile-ipad {
+      display: none;
+     }
+    #cta1 .label {
+    white-space: nowrap;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px)  {
-    
+    #cta1 .mobile-ipad {
+      display: none;
+     }
+    #cta1 .label {
+    white-space: nowrap;
+    }
 }
 @media (min-width: 375px) and (max-width: 767px)  {
- 
+    #cta1 .desktop-ipadpro {
+      display: none;
+    }
+    header#cta1 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    }
+    #cta1 .label {
+    white-space: normal;
+    }
 }
 @media (min-width: 320px) and (max-width: 374px)  {
- 
+    #cta1 .desktop-ipadpro {
+      display: none;
+    }
+    header#cta1 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    }
+    #cta1 .label {
+    white-space: normal;
+    }
 }
