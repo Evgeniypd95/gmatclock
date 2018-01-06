@@ -144,7 +144,7 @@
                         </ol>
                     </div>
                     <div class="col-md-4">
-                        <a class="btn btn-lg btn-default btn-block" href="#" data-toggle="moddata-target="  #signup">Sign Up</a>
+                        <a class="btn btn-lg btn-primary btn-block" href="#" data-toggle="modal" data-target="#signup">Sign Up</a>
                     </div>
                 </div>
             </div>
