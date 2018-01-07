@@ -6,36 +6,48 @@
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Sign up</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Log in</a></li>
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <li class="active">
+      <a href="#signup-form" aria-controls="signup-form" role="tab" data-toggle="tab">Sign up</a>
+    </li>
+    <li>
+      <a href="#login-form" aria-controls="login-form" role="tab" data-toggle="tab">Log in</a>
+    </li>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">
-      <form style="margin-top: 10px;">
+    <div role="tabpanel" class="tab-pane active" id="signup-form">
+      <!-- signup form -->
+      <form method="post" class="form-landing" accept-charset="utf-8" action="<?=base_url()?>frontend/signup">
+
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          <label for="InputEmail">Email address</label>
+          <input type="email" name="email" class="form-control" id="InputEmail" placeholder="Email">
         </div>
 
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="InputPassword">Password</label>
+          <input type="password" name="password" class="form-control" id="InputPassword" placeholder="Password">
         </div>
 
         <div class="form-group">
-          <label for="exampleInputPassword1">Confirm Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="VerifyPassword">Confirm Password</label>
+          <input type="password" name="passconf" class="form-control" id="VerifyPassword" placeholder="Password">
         </div>
 
         <button type="submit" class="btn btn-success">Sign up</button>
+        
       </form>
     </div>
 
-    <div role="tabpanel" class="tab-pane" id="profile">
-      <form style="margin-top: 10px;">
+    <!-- login form -->
+    <div role="tabpanel" class="tab-pane" id="login-form">
+
+      <form class="form-landing">
+
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -67,13 +79,13 @@
 </footer>
     
 <!-- jQuery -->
-<script src="assets/bootstrap/js/jquery.js"></script>
+<script src="<?=base_url()?>assets/bootstrap/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?=base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Scripts -->
-<script src="assets/bootstrap/js/gmatclock.js"></script>
+<script src="<?=base_url()?>assets/bootstrap/js/gmatclock.js"></script>
 
 </body>
 </html>

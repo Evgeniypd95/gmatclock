@@ -1,60 +1,60 @@
 <!-- Header-->
 <header id="cta1">
-        <div class="container">
-            <div class="row">
-                <!-- left column of header -->
-                <div class="col-md-6 col-sm-6">
-                	<h1>Track your GMAT progress with counting time.</h1>
-                	<h3 class="desktop-ipadpro">Sign up now to track your progress towards you goal.</h3>
-                	   <div class="text-center desktop-ipadpro">
-                	       <a href="#" data-toggle="modal" data-target="#signup" class="btn btn-primary">Sign up</a>
-                        </div>
-                </div>
-                <!-- left column of header ends-->
+    <div class="container">
+        <div class="row">
+            <!-- left column of header -->
+            <div class="col-md-6 col-sm-6">
+            	<h1>Track your GMAT progress with counting time.</h1>
+            	<h3 class="desktop-ipadpro">Sign up now to track your progress towards you goal.</h3>
+            	   <div class="text-center desktop-ipadpro">
+            	       <a href="#" data-toggle="modal" data-target="#signup" class="btn btn-primary">Sign up</a>
+                    </div>
+            </div>
+            <!-- left column of header ends-->
 
-                <!-- right column of header -->
-                <div class="col-md-6 col-sm-6 calc-form">
-				    <div class="panel">
-					    <div class="panel-heading">
-						    <div class="row">
-							    <div class="col-xs-12 text-center">
-								    <div>See how many hours do you need to study</div>
-							    </div>
+            <!-- right column of header -->
+            <div class="col-md-6 col-sm-6 calc-form">
+			    <div class="panel">
+				    <div class="panel-heading">
+					    <div class="row">
+						    <div class="col-xs-12 text-center">
+							    <div>See how many hours do you need to study</div>
 						    </div>
-						<hr>
-					</div>
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-lg-12">
-								<form class="form-horizontal">
-                                    <div class="form-group">
-                                        <label for="inputDesired" class="col-sm-6 control-label">Score you want to get</label>
-                                        <div class="col-sm-6">
-                                            <input type="number" id="desired" class="form-control" id="inputDesired" placeholder="600">
-                                        </div>
+					    </div>
+					<hr>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-12">
+							<form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputDesired" class="col-sm-6 control-label">Score you want to get</label>
+                                    <div class="col-sm-6">
+                                        <input type="number" id="desired" class="form-control" id="inputDesired" placeholder="600">
                                     </div>
-                                    
-                                    <div class="form-group">
-                                        <div class="text-center">
-                                            <a class="btn btn-default" onclick="calcScore()">Calculate</a>
-                                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="text-center">
+                                        <a class="btn btn-default" onclick="calcScore()">Calculate</a>
                                     </div>
-                                        <div class="col-sm-12 text-center" id="result"></div>
-                                </form>
-							</div>
+                                </div>
+                                    <div class="col-sm-12 text-center" id="result"></div>
+                            </form>
 						</div>
 					</div>
-				    </div>
+				</div>
 			    </div>
-                <!-- right column of header ends-->
-                <div class="col-md-12 mobile-ipad">
-                    <h3>Sign up now to track your progress towards you goal.</h3>
-                       <div class="text-center">
-                           <a href="#" data-toggle="modal" data-target="#signup" class="btn btn-primary">Sign up</a>
-                        </div>
-                </div>
+		    </div>
+            <!-- right column of header ends-->
+            <div class="col-md-12 mobile-ipad">
+                <h3>Sign up now to track your progress towards you goal.</h3>
+                   <div class="text-center">
+                       <a href="#" data-toggle="modal" data-target="#signup" class="btn btn-primary">Sign up</a>
+                    </div>
             </div>
         </div>
+    </div>
 </header>
 <!-- header ends -->
 

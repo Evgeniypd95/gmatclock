@@ -15,10 +15,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#profile" data-toggle="modal" data-target="#signup">Log in</a>
+                    <a href="#login-form" data-toggle="modal" data-target="#signup">Log in</a>
                 </li>
                 <li>
-                    <a href="#home" data-toggle="modal" data-target="#signup">Sign up</a>
+                    <a href="#signup-form" data-toggle="modal" data-target="#signup">Sign up</a>
                 </li>
             </ul>
         </div>
