@@ -1,3 +1,4 @@
+
 $('#signup').on('show.bs.modal', function (event) {
     // Button that triggered the modal
     var button = $(event.relatedTarget)

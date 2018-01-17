@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <!-- left column of header -->
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-6 intro">
             	<h1>Track your GMAT progress with counting time.</h1>
             	<h3 class="desktop-ipadpro">Sign up now to track your progress towards you goal.</h3>
             	   <div class="text-center desktop-ipadpro">

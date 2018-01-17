@@ -12,13 +12,22 @@
             <a class="navbar-brand" href="index.html">GMATClock</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
+        <?php 
+        if ($action==='login') {
+            $classlogin = "active";
+            $classsignup = "";
+        } else {
+            $classlogin = "";
+            $classsignup = "active";
+        }
+        ?>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="<?=base_url()?>frontend/login_view">Log in</a>
+                    <a class="<?=$classlogin;?>" href="<?=base_url()?>frontend/login_view">Log in</a>
                 </li>
                 <li>
-                    <a href="<?=base_url()?>frontend/signup_view">Sign up</a>
+                    <a class="<?=$classsignup;?>" href="<?=base_url()?>frontend/signup_view">Sign up</a>
                 </li>
             </ul>
         </div>

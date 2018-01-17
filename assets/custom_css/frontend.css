@@ -29,51 +29,84 @@ header#cta1 {
   margin-top: 10px;
 }
 @media (min-width:1025px) { 
-     #cta1 .mobile-ipad {
-      display: none;
-     }
-    #cta1 .label {
+  #cta1 .mobile-ipad {
+    display: none;
+   }
+  #cta1 .label {
     white-space: nowrap;
-    }
+  }
+  .navbar {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+nav .nav {
+  font-size: 20px;
+}
+nav .navbar-brand {
+  font-size: 25px;
+}
 }
 
 @media (min-width: 1201px){
   #cta1 .mobile-ipad {
-      display: none;
-     }
-    #cta1 .label {
+    display: none;
+    }
+  #cta1 .label {
     white-space: nowrap;
     }
+    .navbar {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+nav .nav {
+  font-size: 20px;
+}
+nav .navbar-brand {
+  font-size: 25px;
+}
 }
 
 @media (min-width:992px) and (max-width: 1200px) {
-    #cta1 .mobile-ipad {
-      display: none;
-     }
-    #cta1 .label {
-    white-space: nowrap;
+  #cta1 .mobile-ipad {
+    display: none;
     }
+  #cta1 .label {
+  white-space: nowrap;
+    }
+    .navbar {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+nav .nav {
+  font-size: 20px;
+}
+nav .navbar-brand {
+  font-size: 25px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px)  {
-    #cta1 .mobile-ipad {
-      display: none;
-     }
-    #cta1 .label {
-    white-space: nowrap;
+  #cta1 .mobile-ipad {
+    display: none;
+    }
+  #cta1 .label {
+  white-space: nowrap;
     }
 }
 @media (min-width: 375px) and (max-width: 767px)  {
-    #cta1 .desktop-ipadpro {
-      display: none;
+  #cta1 .desktop-ipadpro {
+    display: none;
     }
-    header#cta1 {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    }
-    #cta1 .label {
-    white-space: normal;
-    }
+  header#cta1 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  }
+  #cta1 .label {
+  white-space: normal;
+  }
+  .intro {
+  padding-top: 10px;
+  }
 }
 @media (min-width: 320px) and (max-width: 374px)  {
     #cta1 .desktop-ipadpro {
@@ -85,5 +118,8 @@ header#cta1 {
     }
     #cta1 .label {
     white-space: normal;
+    }
+    .intro {
+    padding-top: 10px;
     }
 }
