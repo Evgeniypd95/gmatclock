@@ -25,17 +25,16 @@
   color: #e74c3c;
 }
 @media (min-width:1025px) { 
-   
   .navbar {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   }
-nav .nav {
+  nav .nav {
   font-size: 17px;
-}
-nav .navbar-brand {
+  }
+  nav .navbar-brand {
   font-size: 22px;
-}  
+  }  
 }
 
 @media (min-width: 1201px){
@@ -43,51 +42,51 @@ nav .navbar-brand {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   }
-nav .nav {
+  nav .nav {
   font-size: 17px;
-}
-nav .navbar-brand {
+  }
+  nav .navbar-brand {
   font-size: 22px;
-}
+  }
 }
 
 @media (min-width:992px) and (max-width: 1200px) {
-    .navbar {
+  .navbar {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   }
-nav .nav {
+  nav .nav {
   font-size: 17px;
-}
-nav .navbar-brand {
+  }
+  nav .navbar-brand {
   font-size: 22px;
-}
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px)  {
-    .form-loginsignup {
-      width: 40%;
-    }
-    #login {
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-loginsignup {
+    width: 40%;
+  }
+  #login {
   background-color: #212E3E;
-    }
+  }
 }
-@media (min-width: 375px) and (max-width: 767px)  {
-    .form {
-      width: 100% !important;
-    }
-    .form-loginsignup {
-      width: 100%;
-    }
-    #login {
+@media (min-width: 375px) and (max-width: 767px) {
+  .form {
+    width: 100% !important;
+  }
+  .form-loginsignup {
+    width: 100%;
+  }
+  #login {
   background-color: #212E3E;
-    }
+  }
 }
-@media (min-width: 320px) and (max-width: 374px)  {
-    .form-loginsignup {
-       width: 100%;
-    }
-    #login {
+@media (min-width: 320px) and (max-width: 374px) {
+  .form-loginsignup {
+     width: 100%;
+  }
+  #login {
   background-color: #212E3E;
-    }
+  }
 }

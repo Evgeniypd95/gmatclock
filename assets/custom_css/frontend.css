@@ -1,10 +1,10 @@
 header#cta1 {
-    background-color: #18bc9c;
-    padding-top: 120px;
-    padding-bottom: 80px;
+  background-color: #18bc9c;
+  padding-top: 120px;
+  padding-bottom: 80px;
   }
 #cta1 h1, h3 {
-    color: white;
+  color: white;
   } 
 #cta1 .btn-primary {
   font-size: 20px;
@@ -30,73 +30,71 @@ header#cta1 {
 }
 @media (min-width:1025px) { 
   #cta1 .mobile-ipad {
-    display: none;
-   }
+  display: none;
+  }
   #cta1 .label {
-    white-space: nowrap;
+  white-space: nowrap;
   }
   .navbar {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-}
-nav .nav {
+  }
+  nav .nav {
   font-size: 17px;
-}
-nav .navbar-brand {
+  }
+  nav .navbar-brand {
   font-size: 22px;
+  }
 }
-}
-
-@media (min-width: 1201px){
+@media (min-width: 1201px) {
   #cta1 .mobile-ipad {
-    display: none;
-    }
+  display: none;
+  }
   #cta1 .label {
-    white-space: nowrap;
-    }
-    .navbar {
+  white-space: nowrap;
+  }
+  .navbar {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-}
-nav .nav {
+  }
+  nav .nav {
   font-size: 17px;
-}
-nav .navbar-brand {
+  }
+  nav .navbar-brand {
   font-size: 22px;
+  }
 }
-}
-
 @media (min-width:992px) and (max-width: 1200px) {
   #cta1 .mobile-ipad {
-    display: none;
-    }
+  display: none;
+  }
   #cta1 .label {
   white-space: nowrap;
-    }
-    .navbar {
+  }
+  .navbar {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-}
-nav .nav {
+  }
+  nav .nav {
   font-size: 17px;
-}
-nav .navbar-brand {
+  }
+  nav .navbar-brand {
   font-size: 22px;
-}
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px)  {
+@media (min-width: 768px) and (max-width: 991px) {
   #cta1 .mobile-ipad {
-    display: none;
-    }
+  display: none;
+  }
   #cta1 .label {
   white-space: nowrap;
-    }
+  }
 }
-@media (min-width: 375px) and (max-width: 767px)  {
+@media (min-width: 375px) and (max-width: 767px) {
   #cta1 .desktop-ipadpro {
-    display: none;
-    }
+  display: none;
+  }
   header#cta1 {
   padding-top: 50px;
   padding-bottom: 20px;
@@ -108,9 +106,9 @@ nav .navbar-brand {
   padding-top: 10px;
   }
 }
-@media (min-width: 320px) and (max-width: 374px)  {
-    #cta1 .desktop-ipadpro {
-      display: none;
+@media (min-width: 320px) and (max-width: 374px) {
+  #cta1 .desktop-ipadpro {
+    display: none;
     }
     header#cta1 {
     padding-top: 50px;

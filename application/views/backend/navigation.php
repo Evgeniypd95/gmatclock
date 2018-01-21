@@ -17,9 +17,6 @@
                 <li>
                     <a href="<?=base_url()?>logout">Log Out</a>
                 </li>
-                <li>
-                    <a href="<?=base_url()?>signup">Sign up</a>
-                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
