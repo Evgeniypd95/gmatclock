@@ -32,36 +32,42 @@ class Frontend extends CI_Controller {
 
 	public function signup()
 	{
-
-				$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
-                $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]',
-                        array('required' => 'You must provide a %s.')
-                );
-                $this->form_validation->set_rules('passconf', 'Password Confirmation', 'required|matches[password]');
-                    if ($this->form_validation->run() == FALSE)
-                {
-                        $this->signup_view();
-                }
-                else
-                {
-                        echo "success";
-                }
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]',
+                array('required' => 'You must provide a %s.')
+        );
+        $this->form_validation->set_rules('passconf', 'Password Confirmation', 'required|matches[password]');
+            if ($this->form_validation->run() == FALSE)
+        {
+            $this->signup_view();
+        }
+        else
+        {
+            echo "success";
+        }
 	}
 
 	public function login()
 	{
-
-				$this->form_validation->set_rules('login_email', 'Email', 'trim|required|valid_email');
-                $this->form_validation->set_rules('login_password', 'Password', 'trim|required|min_length[3]',
-                        array('required' => 'You must provide a %s.')
+		$this->form_validation->set_rules('login_email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('login_password', 'Password', 'trim|required|min_length[3]',
+                array('required' => 'You must provide a %s.')
+        );
+            if ($this->form_validation->run() == FALSE)
+        {
+    		$this->login_view();
+        }
+        else
+        {
+           $data = array(
+                'email' => $this->input->post('login_email'),
+                'password' => $this->input->post('login_password')
                 );
-                    if ($this->form_validation->run() == FALSE)
-                {
-    				$this->login_view();
-                }
-                else
-                {
-                        echo "success";
-                }
+
+           $this->db->where($data);
+            $check = $this->db->count_all_results('users');
+            if ($check==1) {
+                echo "string";
+        }
 	}
-}
+}}
