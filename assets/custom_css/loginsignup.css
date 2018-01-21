@@ -2,16 +2,16 @@
   color: #18bc9c !important;
 }
 #login {
-  background-color: #508288;
+  background-color: #212E3E;
   position: fixed;
   width: 100%;
   height: 100%;
 }
-.form-landing {
+.form-loginsignup {
   color: white;
   padding: 20px;
   background-color: #212E3E;
-  font-size: 30px;
+  font-size: 20px;
   border: 2px solid #212E3E; 
   border-radius: 5px; 
   position: fixed; 
@@ -21,7 +21,7 @@
   transform: translate(-50%, -50%);
 }
 .valid-error {
-  font-size: 0.5em;
+  font-size: 0.7em;
   color: #e74c3c;
 }
 @media (min-width:1025px) { 
@@ -31,10 +31,10 @@
   padding-bottom: 0.5em;
   }
 nav .nav {
-  font-size: 20px;
+  font-size: 17px;
 }
 nav .navbar-brand {
-  font-size: 25px;
+  font-size: 22px;
 }  
 }
 
@@ -44,10 +44,10 @@ nav .navbar-brand {
   padding-bottom: 0.5em;
   }
 nav .nav {
-  font-size: 20px;
+  font-size: 17px;
 }
 nav .navbar-brand {
-  font-size: 25px;
+  font-size: 22px;
 }
 }
 
@@ -57,21 +57,37 @@ nav .navbar-brand {
   padding-bottom: 0.5em;
   }
 nav .nav {
-  font-size: 20px;
+  font-size: 17px;
 }
 nav .navbar-brand {
-  font-size: 25px;
+  font-size: 22px;
 }
 }
 
 @media (min-width: 768px) and (max-width: 991px)  {
-    
+    .form-loginsignup {
+      width: 40%;
+    }
+    #login {
+  background-color: #212E3E;
+    }
 }
 @media (min-width: 375px) and (max-width: 767px)  {
     .form {
       width: 100% !important;
     }
+    .form-loginsignup {
+      width: 100%;
+    }
+    #login {
+  background-color: #212E3E;
+    }
 }
 @media (min-width: 320px) and (max-width: 374px)  {
-    
+    .form-loginsignup {
+       width: 100%;
+    }
+    #login {
+  background-color: #212E3E;
+    }
 }

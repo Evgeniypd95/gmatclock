@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="<?=base_url()?>login">Log in</a>
+                    <a href="<?=base_url()?>logout">Log Out</a>
                 </li>
                 <li>
                     <a href="<?=base_url()?>signup">Sign up</a>

@@ -4,27 +4,47 @@ class Loginsignup_model extends CI_Model
 {
 
 	function __construct(){
-
   		parent::__construct();
  	}
  	
 	public function validate($email, $password) {
 
-		$this->db->select('*');
-  		$this->db->from('users');
-	    $this->db->where('email', $email);
-	    $this->db->where('password', $password);
+		$login_data = array(
+                'email' => $email,
+                'password' => md5($password)
+                );		
 
-	    $query = $this->query->get();
-	    
-	    if($query->num_rows() == 1) {
+		$fetch_user_data = $this->db->get_where('users', $login_data);
+		$user_data = $fetch_user_data->row_array();
 
-        	return true;
+            if (isset($user_data)) {
 
-    	} else {
+            	$user_data = array(
+		        'id'  => $user_data['id'],
+		        'email'     => $user_data['email'],
+		        'logged_in' => TRUE
+				);
 
-        	return false;
+				$this->session->set_userdata($user_data);
 
-    	}
+            	return true;
+
+				} else {
+
+				return false;
+				
+				}
 	}
+
+	public function create_user($email, $password) {
+
+		$user_data = array(
+                'email' => $email,
+                'password' => md5($password)
+                );		
+		$this->db->insert('users', $user_data);
+
+        redirect(base_url('dashboard'));
+	}	
 }
+

@@ -2,7 +2,10 @@
 	<div class="container">
 		<div class="row">
 			
-				<form method="post" class="form-landing" accept-charset="utf-8" action="<?=base_url()?>frontend/login">
+				<form method="post" class="form-loginsignup" accept-charset="utf-8" action="<?=base_url()?>login">
+
+					<label class="valid-error"><?php echo $this->session->flashdata('login_err'); ?></label>
+
 			        <div class="form-group">
 			          <label for="loginEmail">Email address</label>
 			          <text class="valid-error"><?php echo form_error('login_email'); ?></text>

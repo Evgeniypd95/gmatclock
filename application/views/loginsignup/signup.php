@@ -1,9 +1,10 @@
 <section id="login">
 	<div class="container">
 		<div class="row">
-			<form method="post" class="form-landing" accept-charset="utf-8" action="<?=base_url()?>frontend/signup">
+			<form method="post" class="form-loginsignup" accept-charset="utf-8" action="<?=base_url()?>signup">
 
 		        <div class="form-group">
+
 		          <label for="InputEmail">Email address</label>
 		          <text class="valid-error"><?php echo form_error('email'); ?></text>
 		          <input type="email" name="email" class="form-control" id="InputEmail" value="<?php echo set_value('email'); ?>" placeholder="Email">
