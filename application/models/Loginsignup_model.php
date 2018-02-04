@@ -19,14 +19,7 @@ class Loginsignup_model extends CI_Model
 
             if (isset($user_data)) {
 
-            	$user_data = array(
-		        'id'  => $user_data['id'],
-		        'email'     => $user_data['email'],
-		        'logged_in' => TRUE
-				);
-
-				$this->session->set_userdata($user_data);
-
+            	$this->start_session($user_data);
             	return true;
 
 				} else {
@@ -36,15 +29,30 @@ class Loginsignup_model extends CI_Model
 				}
 	}
 
-	public function create_user($email, $password) {
+	public function create_user($email, $password, $score) {
 
-		$user_data = array(
+		$signup_data = array(
                 'email' => $email,
-                'password' => md5($password)
+                'password' => md5($password),
+                'date' => date('Y-m-d'),
+                'score' => $score
                 );		
-		$this->db->insert('users', $user_data);
+		$this->db->insert('users', $signup_data);
+
+		$this->start_session($user_data);
 
         redirect(base_url('dashboard'));
+	}
+
+	public function start_session($loginsignup_data) {
+
+		$user_data = array(
+		        'id'  => $loginsignup_data['id'],
+		        'email'     => $loginsignup_data['email'],
+		        'logged_in' => TRUE
+				);
+
+				$this->session->set_userdata($user_data);
 	}	
 }
 

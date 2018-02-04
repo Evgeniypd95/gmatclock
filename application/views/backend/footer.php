@@ -1,90 +1,51 @@
-<!-- login/signup form modal -->
-<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-sm" role="document">
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Modal edit score -->
+<div class="modal fade" id="editScore" tabindex="-1" role="dialog" aria-labelledby="myChangeScore">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Change Score</h4>
+      </div>
       <div class="modal-body">
+        <form method="post" accept-charset="utf-8" action="<?=base_url()?>edit/score">
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li class="active">
-      <a href="#signup-form" aria-controls="signup-form" role="tab" data-toggle="tab">Sign up</a>
-    </li>
-    <li>
-      <a href="#login-form" aria-controls="login-form" role="tab" data-toggle="tab">Log in</a>
-    </li>
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="signup-form">
-      <!-- signup form -->
-      <form method="post" class="form-landing" accept-charset="utf-8" action="<?=base_url()?>frontend/signup">
-
-        <div class="form-group">
-          <label for="InputEmail">Email address</label>
-          <text class="valid-error"><?php echo form_error('email'); ?></text>
-          <input type="email" name="email" class="form-control" id="InputEmail" value="<?php echo set_value('email'); ?>" placeholder="Email">
-        </div>
-
-        <div class="form-group">
-          <label for="InputPassword">Password</label>
-          <text class="valid-error"><?php echo form_error('password'); ?></text>
-          <input type="password" name="password" class="form-control" id="InputPassword" value="<?php echo set_value('password'); ?>" placeholder="Password">
-          
-        </div>
-
-        <div class="form-group"> 
-          <label for="VerifyPassword">Confirm Password</label>
-          <text class="valid-error"><?php echo form_error('passconf'); ?></text>
-          <input type="password" name="passconf" class="form-control" id="VerifyPassword" value="<?php echo set_value('passconf'); ?>" placeholder="Password">
-          
-        </div>
-
-        <button type="submit" class="btn btn-success">Sign up</button>
-        
-      </form>
-    </div>
-
-    <!-- login form -->
-    <div role="tabpanel" class="tab-pane" id="login-form">
-
-      <form method="post" class="form-landing" accept-charset="utf-8" action="<?=base_url()?>frontend/login">
-
-        <div class="form-group">
-          <label for="loginEmail">Email address</label>
-          <text class="valid-error"><?php echo form_error('login_email'); ?></text>
-          <input type="email" name="login_email" class="form-control" id="LoginEmail" value="<?php echo set_value('login_email'); ?>" placeholder="Email">
-        </div>
-
-        <div class="form-group">
-          <label for="loginPassword">Password</label>
-          <text class="valid-error"><?php echo form_error('login_password'); ?></text>
-          <input type="password" name="login_password" class="form-control" id="LoginPassword" value="<?php echo set_value('login_password'); ?>" placeholder="Password">
-        </div>
-
-        <button type="submit" class="btn btn-success">Log in</button>
-      </form>
-    </div>
-  </div>
-
+          <div class="form-group">
+            <label for="InputScore">New Desired Score</label>
+            <text class="valid-error"><?php echo form_error('score'); ?></text>
+            <input type="number" min="201" max="800" name="score" class="form-control" id="InputScore" value="<?php echo set_value('score'); ?>" placeholder="680">
+          </div>     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
- <!-- login/signup form modal ends -->
 
- <!-- Footer -->
-<footer>
-  <div class="row">
-      <div class="col-lg-12">
-        <p>Copyright &copy; GMATClock 2018</p>
+<!-- Modal how it's calculated -->
+<div class="modal fade" id="explainCalc" tabindex="-1" role="dialog" aria-labelledby="myHowitWorks">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Here's how it works</h4>
       </div>
+      <div class="modal-body">
+        <ul class="explain-points">
+        <li><i class="fa fa-line-chart fa-2x"></i> More hours you complete, closer you get to your goal.   </li>
+        <li><i class="fa fa-database fa-2x"></i> GMATClock uses publicly available data about how much time students invest in preparation for GMAT and what kind of scores they get.</li>
+        <li><i class="fa fa-bullhorn fa-2x"></i> Use GMATClock as a guidence that is based on average numbers among all students who took GMAT before. Although it's accurate in most cases, some people need more hours to prepare and some less. </li>
+        </ul>
+      </div>
+    </div>
   </div>
-</footer>
-    
+</div>
 <!-- jQuery -->
 <script src="<?=base_url()?>assets/bootstrap/js/jquery.js"></script>
 
@@ -94,6 +55,11 @@
 <!-- Scripts -->
 <script src="<?=base_url()?>assets/custom_js/gmatclock.js"></script>
 
+<script type="text/javascript">
+     var $timer = $("#timer");
+setInterval(function () {$("#timer").load("http://127.0.0.1:4567/dashboard/ #timer");
+}, 1000);
+ </script>
 
 </body>
 </html>

@@ -1,0 +1,86 @@
+nav> a {
+  color: white !important;
+}
+.panel-footer {
+  color: #2c3e50;
+}
+
+.validation-message {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+.valid-error {
+  font-size: 1em;
+  color: #e74c3c;
+}
+.progress {
+  height: 30px;
+}
+.explain-points {
+  list-style-type: none;
+}
+.explain-points>li {
+    margin-bottom: 20px;
+}
+.explain-points>li>i {
+    color: #EB9D3E;
+}
+
+#pagination {
+  font-size: 1.2em;
+  color: #149c82;
+}
+#pagination> a {
+  color: #212E3F;
+}
+@media (min-width:1140px) {
+  #page-wrapper {
+    padding-bottom: 258px !important; 
+  }
+  .navbar-brand {
+  font-weight: bold;
+  }
+  .time-form {
+  width: 200px !important;
+  }
+}
+@media (width:1024px) and (height: 1366px) {
+  #page-wrapper {
+    padding-bottom: 417px !important; 
+  }
+  .navbar-brand {
+  font-weight: bold;
+  }
+  .time-form {
+  width: 200px !important;
+  }
+}
+@media (min-width:1024px) and (max-width: 1139px) {
+  #page-wrapper {
+    padding-bottom: 217px !important; 
+  }
+  .navbar-brand {
+  font-weight: bold;
+  }
+  .time-form {
+  width: 200px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #page-wrapper {
+    padding-bottom: 125px !important; 
+  }  
+  .navbar-brand {
+  font-weight: bold;
+  }
+  .time-form {
+  width: 100px !important;
+  }  
+}
+@media (min-width: 375px) and (max-width: 767px) {
+
+}
+@media (min-width: 320px) and (max-width: 374px) {
+
+}

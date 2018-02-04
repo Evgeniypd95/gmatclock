@@ -3,6 +3,11 @@
 		<div class="row">
 			<form method="post" class="form-loginsignup" accept-charset="utf-8" action="<?=base_url()?>signup">
 
+				<div class="form-group">
+		        	<label for="InputScore">Desired Score</label>
+		        	<text class="valid-error"><?php echo form_error('score'); ?></text>
+		        	<input type="text" min="201" max="800" name="score" class="form-control" id="InputScore" value="<?php echo set_value('score'); ?>" placeholder="680">
+		        </div>
 		        <div class="form-group">
 		        	<label for="InputEmail">Email address</label>
 		        	<text class="valid-error"><?php echo form_error('email'); ?></text>

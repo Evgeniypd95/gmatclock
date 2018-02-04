@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+$route['dashboard/(:num)'] = 'backend/backend_view/$2';
 $route['index/(:any)'] = "frontend/index/$1";
 $route['default_controller'] = 'frontend';
 $route['404_override'] = '';
@@ -11,3 +11,10 @@ $route['signup']['get'] = "frontend/signup_view";
 $route['signup']['post'] = "frontend/signup";
 $route['dashboard']['get'] = "backend/index";
 $route['logout']['get'] = "backend/logout";
+$route['edit/score']['post'] = "backend/edit_score";
+$route['input/time']['post'] = "backend/input_time";
+$route['delete/(:num)']['get'] = "backend/delete_time/$1";
+$route['dashboard/delete/(:num)']['get'] = "backend/delete_time/$1";
+$route['start_timer']['get'] = "backend/start_timer";
+$route['stop_timer']['get'] = "backend/stop_timer";
+$route['complete_timer']['get'] = "backend/complete_timer";
