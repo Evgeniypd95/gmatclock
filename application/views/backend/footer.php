@@ -60,6 +60,17 @@
 setInterval(function () {$("#timer").load("http://127.0.0.1:4567/dashboard/ #timer");
 }, 1000);
  </script>
+ <script>
+        var a=document.getElementsByTagName("a");
+for(var i=0;i<a.length;i++)
+{
+    a[i].onclick=function()
+    {
+        window.location=this.getAttribute("href");
+        return false
+    }
+}
+</script>
 
 </body>
 </html>

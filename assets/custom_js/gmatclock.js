@@ -1,14 +1,4 @@
 
-$('#signup').on('show.bs.modal', function (event) {
-    // Button that triggered the modal
-    var button = $(event.relatedTarget)
-  
-    // the modal
-    var modal = $(this);
-    
-    //show tab
-    modal.find('[href="'+button.attr("href")+'"]').tab('show');
-    });
 
 function calcScore() {
     var x, h;

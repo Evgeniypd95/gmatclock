@@ -28,6 +28,9 @@ header#cta1 {
 .form-landing {
   margin-top: 10px;
 }
+.landing-i {
+  color: white;
+}
 @media (min-width:1025px) { 
   #cta1 .mobile-ipad {
   display: none;

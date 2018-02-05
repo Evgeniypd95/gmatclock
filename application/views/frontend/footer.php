@@ -15,7 +15,17 @@
 
 <!-- Scripts -->
 <script src="<?=base_url()?>assets/custom_js/gmatclock.js"></script>
-
+<script>
+        var a=document.getElementsByTagName("a");
+for(var i=0;i<a.length;i++)
+{
+    a[i].onclick=function()
+    {
+        window.location=this.getAttribute("href");
+        return false
+    }
+}
+</script>
 
 </body>
 </html>
