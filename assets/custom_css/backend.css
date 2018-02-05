@@ -4,7 +4,6 @@ nav> a {
 .panel-footer {
   color: #2c3e50;
 }
-
 .validation-message {
   margin-top: 10px;
   font-size: 1.1em;
@@ -25,13 +24,19 @@ nav> a {
 .explain-points>li>i {
     color: #EB9D3E;
 }
-
 #pagination {
   font-size: 1.2em;
   color: #149c82;
 }
 #pagination> a {
   color: #212E3F;
+}
+.user-i {
+  color: #46B28B;
+}
+.user-a {
+  cursor: not-allowed; 
+  pointer-events: none;
 }
 @media (min-width:1140px) {
   #page-wrapper {
@@ -79,8 +84,18 @@ nav> a {
   }  
 }
 @media (min-width: 375px) and (max-width: 767px) {
-
+  #page-wrapper {
+    margin-top: -13%; 
+  }
+  .user-i {
+  color: #EA9D3D;
+  }
 }
 @media (min-width: 320px) and (max-width: 374px) {
-
+   #page-wrapper {
+    margin-top: -13%; 
+  }
+  .user-i {
+  color: #EA9D3D;
+  }
 }

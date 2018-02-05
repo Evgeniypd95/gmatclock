@@ -13,13 +13,15 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-                <li> <?php foreach($user_data as $user_info){?>
-                    <a><i class="fa fa-user"></i> <?=$user_info->email;?></a>
-                </li> 
+                <?php foreach($user_data as $user_info){?>
+
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
+                    <li> 
+                        <a class="user-a"><i class="fa fa-fw fa-user user-i"></i> <?=$user_info->email;?></a>
+                    </li>
                     <li>
                         <a href="<?=base_url()?>dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
