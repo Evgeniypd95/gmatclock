@@ -39,9 +39,16 @@ class Loginsignup_model extends CI_Model
                 );		
 		$this->db->insert('users', $signup_data);
 
+		$login_data = array(
+                'email' => $email,
+                'password' => md5($password)
+                );	
+
+		$fetch_user_data = $this->db->get_where('users', $login_data);
+		$user_data = $fetch_user_data->row_array();
+
 		$this->start_session($user_data);
 
-        redirect(base_url('dashboard'));
 	}
 
 	public function start_session($loginsignup_data) {

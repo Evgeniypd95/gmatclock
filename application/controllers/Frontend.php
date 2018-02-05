@@ -63,6 +63,7 @@ class Frontend extends CI_Controller {
 
             $this->load->model('loginsignup_model');
             $this->loginsignup_model->create_user($email, $password, $score);
+            redirect(base_url('dashboard'));
                 }
 	}
 
