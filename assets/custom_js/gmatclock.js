@@ -1,5 +1,3 @@
-
-
 function calcScore() {
     var x, h;
         

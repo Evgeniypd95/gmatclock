@@ -13,6 +13,27 @@
                     </div>
             </div>
             <!-- left column of header ends-->
+            <!-- <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputDesired" class="col-sm-6 control-label">Score you want to get</label>
+                                    <div class="col-sm-6">
+                                        <input type="number" id="desired" class="form-control" id="inputDesired" placeholder="600">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="text-center">
+                                        <a class="btn btn-default" onclick="calcScore()">Calculate</a>
+                                    </div>
+                                </div>
+                                    <div class="col-sm-12 text-center" id="result"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
 		    </div>
         </div>
     </div>
